@@ -34,7 +34,7 @@ class BobasAdapter(val listDataBobas: ArrayList<Bobas>): RecyclerView.Adapter<Bo
         holder.bobasBinding.tvPrice.text = bobas.price
 
         holder.itemView.setOnClickListener {
-            onItemClickCallback.onItemClicked(listDataBobas[holder.adapterPosition])
+            onItemClickCallback.onItemClicked(listDataBobas[holder.bindingAdapterPosition])
         }
     }
 
