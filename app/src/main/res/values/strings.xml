@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">DrinkBobas</string>
+    <string name="name">Name</string>
+    <string name="price">Price</string>
+    <string name="description">Description</string>
+    <string name="image_view">Image View</string>
+    <string name="deskripsi">Deskripsi Minuman</string>
+    <string name="nama_minuman">Matcha Oishi</string>
+    <string name="about_user">About User</string>
+    <string name="myname">Disi Kharisma Persia</string>
+    <string name="email">disi.kharisma@gmail.com</string>
+    <string name="back_to_main">Back To Main</string>
+</resources>

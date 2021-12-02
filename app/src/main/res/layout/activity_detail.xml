@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailActivity">
+
+    <ImageView
+        android:id="@+id/ivDetail"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_300dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/matcha_oishi" />
+
+    <TextView
+        android:id="@+id/tvNameDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_20dp"
+        android:layout_marginTop="@dimen/_10dp"
+        android:layout_marginEnd="@dimen/_20dp"
+        android:text="@string/nama_minuman"
+        android:textSize="@dimen/_30sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivDetail"/>
+
+    <TextView
+        android:id="@+id/tvDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tvNameDetail"
+        android:text="@string/deskripsi"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginEnd="@dimen/_20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="@dimen/_20dp"
+        android:layout_marginTop="@dimen/_10dp"/>
+
+    <TextView
+        android:id="@+id/tvDescriptionContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Isi Deskripsi"
+        android:textSize="@dimen/_18sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="@dimen/_10dp"
+        app:layout_constraintTop_toBottomOf="@id/tvDescription"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="@dimen/_20dp"
+        android:layout_marginEnd="@dimen/_20dp"/>
+
+    <ImageView
+        android:id="@+id/ivIconDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20dp"
+        app:layout_constraintStart_toStartOf="@+id/tvDescriptionContent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDescriptionContent"
+        app:srcCompat="@drawable/ic_baseline_monetization_on_24" />
+
+    <TextView
+        android:id="@+id/tvPriceDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rp 35.000"
+        android:layout_marginStart="@dimen/_10dp"
+        android:textSize="@dimen/_18sp"
+        android:textColor="@android:color/holo_red_dark"
+        app:layout_constraintBottom_toBottomOf="@+id/ivIconDetail"
+        app:layout_constraintStart_toEndOf="@+id/ivIconDetail"
+        app:layout_constraintTop_toTopOf="@+id/ivIconDetail" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
